@@ -1,0 +1,32 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.second-banner{
+    padding: 50px;
+    
+}
+.sndsection{
+    background-color:#EBF0F3;
+}
+
+#2img{
+    background-color:#ECF0F4;
+    width: 100%;
+}
+.cardfront{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+    background-color: #EBF0F3;
+    padding-top: 30px;
+}
+
+.about-company{
+    background-color:#EBF0F3 ;
+}
+
+.offersection{
+    background-color:#EBF0F3 ;
+    padding-bottom: 40px;
+}

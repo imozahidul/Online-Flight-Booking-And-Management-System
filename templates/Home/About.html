@@ -1,0 +1,270 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="img/logo image.png">
+    
+    <title>About Page</title>
+
+    <link rel="stylesheet" href=" {% static 'css/style.css' %} ">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">GoFly</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/flights">Flights</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+    
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Login
+                </a>
+    
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+    
+                  <li><a class="dropdown-item" href="admin">Admin Login</a></li>
+              
+                </ul>
+    
+              </li>
+    
+            </ul>
+    
+            <form class="d-flex" method="get" action="/search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                id="search"
+                name="Search"
+              />
+    
+              <button class="btn btn-outline-info" type="submit">
+                Search
+              </button>
+    
+            </form>
+    
+          </div>
+        </div>
+    </nav>
+
+      <!-- about company -->
+
+      <section style="background-color: #EBF0F3;padding: 60px;">
+        <div class="container" style="padding-top: 30px;">
+            <div class="row">
+              <div class="col-1"></div>
+              <div class="col-10">
+                <div class="card mb-3" style="max-width: 1080px; background-color: #EBF0F3 ; border: none;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="media/img/logo.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h2 class="card-title">GoFly</h2>
+                        <p class="card-text">GoFly is a flight booking and management company that is on an endless journey to make your travel experiences happier with tech-driven innovations. GoFly is inspired by the explorers like you, who go every day with the passion of discovering the unseen. Wherever you want to travel, find hotels, flights, buses, tours, and more in Gofly and get ready for your explorations.
+                          So, where are you going next? Book your travel here</p>
+                        <p class="card-text"><small class="text-warning">"Gofly Fly-high!"</small></p>
+                      </div>
+                    </div>
+                  </div>
+          </div>
+              </div>
+              <div class="col-1"></div>
+                    
+            </div>
+        </div>
+     </section>
+
+     <!-- Goal of the Company -->
+     <section style="background-color: #EBF0F3;padding: 60px;">
+      <div class="container" style="padding-top: 30px;">
+          <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+              <div class="card mb-3" style="max-width: 1080px; background-color: #EBF0F3 ; border: none;">
+                <div class="row g-0">
+                  <!-- <div class="col-md-4">
+                    <img src="media/img/logo.png" class="img-fluid rounded-start" alt="...">
+                  </div> -->
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h2 class="card-title">Our vision</h2>
+                      <p class="card-text">The new identity is inspired by efforts to continuously explore and innovate the world of travel. In tandem with the momentum, the brand will keep providing the latest tech-led solutions for the travelers of tomorrow. Just as travel never stops, this new identity implies that innovation will never stop for GoFly.</p>
+                      <p class="card-text">"As a company we have always tried to put ourselves in the shoes of the traveler. We empathise and grow with them. This is why we know what the traveler might need now and in the future. Empowering the traveler with the ability to choose his own journey is our key mission. With the vision of constant innovation in mind, we have built a new outlook for our brand," - CEO, Gofly.</p>
+                      <p class="card-text"><small class="text-warning">"Gofly Fly-high!"</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="media/img/logo.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+                </div>
+                
+        </div>
+            </div>
+            <div class="col-1"></div>
+                  
+          </div>
+      </div>
+   </section>
+
+     <!-- devoloper details -->
+     <section style="background-color: #EBF0F3;padding: 60px; padding-top: 30px;">
+      
+      <div class="container" style="padding: 80px;">
+        <h2>Developer Details</h2>
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+            </div>
+            <div class="col-1"></div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card">
+                  <img src="media/img/devolopers/User.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"><strong>Mozahidul Islam</strong></h5>
+                    <p></p>
+                    <p class="card-text">ID: 2020000000023</p>
+                    <p class="card-text">Batch: 54</p>
+                    <p class="card-text">Bsc in CSE</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="media/img/devolopers/User.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+        
+                    <h5 class="card-title"><strong>Iftakhar Quader</strong></h5>
+                    <p></p>
+                    <p class="card-text">ID: 2020000000011</p>
+                    <p class="card-text">Batch: 54</p>
+                    <p class="card-text">Bsc in CSE</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="media/img/devolopers/User.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"><strong>Samsunnahar Srabony</strong></h5>
+                    <p></p>
+                    <p class="card-text">ID: 2020000000005</p>
+                    <p class="card-text">Batch: 54</p>
+                    <p class="card-text">Bsc in CSE</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-2"></div>
+              </div>    
+          </div>
+      </div>
+   </section>
+
+
+      <!-- footer section -->
+
+   <footer class="bg-dark text-white pt-5 pb-4 footer">
+
+    <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class=" mb-4 font-weight-bold text-warning">GoFly</h5>
+                <p>One solution to all your problems.</p>
+
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class=" mb-4 font-weight-bold text-warning">Services</h5>
+
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none">Flights</a>
+                </p>
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none">Hotels</a>
+                </p>
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none">Car rents</a>
+                </p>
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none">Resturents</a>
+                </p>
+                
+
+            </div>
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class=" mb-4 font-weight-bold text-warning">Need Help?</h5>
+                <p>We are Always here for you! Knock us on Messenger anytime or Call our Hotline (10AM - 10PM).</p>
+
+            </div>
+
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 align-items-center">
+                <h5 class=" mb-4 font-weight-bold text-warning align-items-center">Contact Info</h5>
+                <p>Banani 15/A</p>
+                <p>Email: gofly@gmail.com</a></p>
+                <p>Phone: 01521558907</p>
+
+            </div>
+           <hr class="mb-4"> 
+           <div class="row align-items-center">
+            <p>Copyright ©2022 All rights resetrved by: <strong>GoFly</strong></p>
+           </div>
+        
+
+        </div>
+
+    </div>
+
+
+</footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>

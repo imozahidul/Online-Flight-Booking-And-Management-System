@@ -1,0 +1,44 @@
+.nav {
+
+    position: sticky;
+}
+
+.Fcard-container {
+
+    margin-left:150px;
+    margin-right:150px;
+    margin-top: 30px;
+}
+
+.spacing {
+
+    border: none;
+    border-radius: 0.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    align-items: center;
+    transition: top 0.8s;
+}
+
+.card { /* aligns the first card into center if the screen is small */
+
+    background: none;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+}
+
+img {
+
+    max-height: 70px;
+    /* border: 0.1rem solid snow; */
+    border-radius: 0.5rem;
+}
+
+.accordion-button {
+
+    background: #31D2F2;
+}

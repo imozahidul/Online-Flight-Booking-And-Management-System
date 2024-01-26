@@ -1,0 +1,58 @@
+{% extends 'Base.html' %}
+
+{% block title %} Flight Booking {% endblock %}
+
+{% block body %}
+
+<body style="background-color: rgb(162, 158, 158);">
+
+  <div class="container" style="padding: 120px;">
+
+    <div class="mt-3 mb-3">
+      <h2>Insert Your Information:</h2>
+    </div>
+
+    <form method="post" action="/bookFlight">
+
+      {% csrf_token %}
+
+      <div class="form-floating mt-3 mb-3">
+
+          <input type="text" class="form-control" id="customerName" name="customerName" placeholder="Password" required>
+          <label for="customerName">Name</label>
+
+      </div>
+
+      <div class="form-floating mb-3">
+
+          <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+          <label for="email">Email address</label>
+
+      </div>
+
+      <div class="mb-3">
+        <textarea class="form-control" name="Address" id="address" cols="30" rows="5" placeholder="Address" required></textarea>
+      </div>
+
+      <div class="form-floating mt-3 mb-3">
+
+        <input type="text" class="form-control" id="customerPhone" name="customerPhone" placeholder="Phone number" required>
+        <label for="customerPhone">Phone number</label>
+
+    </div>
+
+      <button type="submit" class="btn btn-primary">Book Flight</button>
+
+      <a href="/">
+        <input type="button" class="btn btn-primary" value="Home" id="Home">
+      </a>
+
+    </form>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</body>
+
+{% endblock %}
